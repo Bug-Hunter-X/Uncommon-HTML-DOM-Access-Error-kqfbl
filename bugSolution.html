@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Wait for the DOM to be fully loaded using DOMContentLoaded event
+    document.addEventListener('DOMContentLoaded', function() {
+      const myDiv = document.getElementById('myDiv');
+      if (myDiv) { // Add check to handle potential issues
+        myDiv.innerHTML = '<b>This text is now bold.</b>';
+      }
+      else{
+        console.error("Element not found");
+      }
+    });
+  </script>
+</body>
+</html>
