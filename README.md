@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in HTML involving accessing a DOM element before it's fully rendered.  The bug occurs because the script attempts to manipulate the 'myDiv' element before the browser has finished parsing the HTML and adding it to the Document Object Model (DOM).  The solution demonstrates proper handling to ensure the element exists before access.
